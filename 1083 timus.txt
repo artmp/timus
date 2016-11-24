@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+int main()
+{
+  int n, k, res = 1;
+  string s;
+  cin >> n >> s;
+  k = s.length();
+  while (n > 0) {
+      res*=n;
+      n-=k;
+  }
+  cout << res;
+  
+}
