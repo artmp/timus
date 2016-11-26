@@ -1,0 +1,28 @@
+a,b=(int(i) for i in(input().split()))
+if (a ==1 ):
+   maxrazmer = 2*b
+   minrazmer = 2*b
+elif (a ==2 ):
+   maxrazmer = (2*b*b)**0.5
+   minrazmer = b
+elif (a ==3 ):
+   maxrazmer = b
+   minrazmer = b * (3**0.5) / 2
+k = 0 
+n=int(input())
+for i in range(n):
+    x,y=(int(z) for z in(input().split()))
+    if (x ==1 ): 
+        raz = 2*y
+        if (raz <= maxrazmer):
+            k+=1
+    elif (x ==2 ): 
+        raz = y
+        if (raz <= maxrazmer):
+            k+=1
+    elif (x==3): 
+        raz = y * (3**0.5) / 2
+        if (raz <= maxrazmer):
+            k+=1
+            
+print(k)
